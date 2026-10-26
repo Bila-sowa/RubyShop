@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: rubyshop
+      POSTGRES_PASSWORD: rubyshop
+      POSTGRES_DB: rubyshop
+    ports:
+      - '5432:5432'
+    volumes:
+      - rubyshop-db:/var/lib/postgresql/data
+
+volumes:
+  rubyshop-db:

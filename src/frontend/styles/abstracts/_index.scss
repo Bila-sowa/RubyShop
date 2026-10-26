@@ -1,0 +1,3 @@
+// Єдина точка входу: у модулях пишемо `@use '@/styles/abstracts' as *;`
+@forward 'tokens';
+@forward 'mixins';

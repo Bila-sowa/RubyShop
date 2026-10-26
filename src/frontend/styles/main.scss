@@ -1,0 +1,5 @@
+// Глобальні стилі. Стилі компонентів — у *.module.scss поруч із компонентом.
+@use 'abstracts';
+@use 'base/reset';
+@use 'base/typography';
+@use 'layout/container';

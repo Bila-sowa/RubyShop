@@ -1,0 +1,10 @@
+@use '../abstracts' as *;
+
+.container {
+  width: min(100% - 2 * var(--space-3), 72rem);
+  margin-inline: auto;
+
+  @include up('md') {
+    width: min(100% - 2 * var(--space-4), 72rem);
+  }
+}

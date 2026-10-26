@@ -1,0 +1,14 @@
+@use 'sass:map';
+@use 'tokens';
+
+// mobile-first: @include up('md') { ... }
+@mixin up($name) {
+  @media (min-width: map.get(tokens.$breakpoints, $name)) {
+    @content;
+  }
+}
+
+@mixin focus-ring {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
+}

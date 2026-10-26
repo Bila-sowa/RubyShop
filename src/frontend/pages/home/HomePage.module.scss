@@ -1,0 +1,13 @@
+@use '@/styles/abstracts' as *;
+
+.hero {
+  padding-block: var(--space-5);
+
+  @include up('md') {
+    padding-block: calc(var(--space-5) * 1.5);
+  }
+}
+
+.status {
+  color: var(--color-text-muted);
+}
